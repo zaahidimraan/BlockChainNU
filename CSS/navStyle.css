@@ -28,7 +28,7 @@ body {
 
 .btnN:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 20px rgba(154, 142, 142, 0.2);
     
 }
 
@@ -38,7 +38,7 @@ body {
 }
 
 .btnN-white {
-    background-color: #1717bd;
+    background-color: #c3c3df;
     border-radius: 5px;
     margin-left: 5px;
     color: #000000;
@@ -59,7 +59,7 @@ body {
 }
 
 .btnN-white::after {
-    background-color: #6282c2;
+    background-color: #93a9d4;
 }
 
 .btnN:hover::after {
