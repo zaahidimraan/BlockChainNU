@@ -42,19 +42,19 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate">Home</a></li>
-          <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate">Events</a></li>
-          <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate">Blog</a>
-          </li>
-
-        </ul>
-
-
-        <div class="text-end">
-          <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate">About Us</a></li>
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate">Team</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">Home</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">Event</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">Blog</a>
+            </li>
+  
           </ul>
+  
+  
+          <div class="text-end">
+            <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">About Us</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">Team</a></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -299,9 +299,9 @@
      </div>
      <div class="text-end pr-5 mb-5" style="float:right">
        <div class="menuF" onclick="this.classList.toggle('open')">
-         <div class="button">Home</div>
-         <div class="button">Blog</div>
-         <div class="button">Events</div>
+        <div class="button" onclick="IndexPage()">Home</div>
+        <div class="button" onclick="BlogPage()">Blog</div>
+        <div class="button" onclick="EventPage()">Events</div>
         </div>
       </div>
      </section>
@@ -309,5 +309,12 @@
 
     <!--JavaScript Link to assests folder and access scoucres-->
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function IndexPage(){location.replace("./index.html")}
+        function EventPage(){location.replace("./HTML/Event.html")}
+        function BlogPage(){location.replace("./HTML/Blog.html")}
+        function AboutUsPage(){location.replace("./HTML/AboutUs.html")}
+        function TeamPage(){location.replace("./HTML/Team.html")}
+      </script>
 </body>
 </html>
