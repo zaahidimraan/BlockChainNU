@@ -14,22 +14,6 @@ body {
   justify-content: center;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
 /*Animation on buttons in navbar in NavBar*/
 .btnN:link,
 .btnN:visited {
@@ -100,8 +84,8 @@ body {
 /*Floating Image*/
 
 .logo {
-    border: 1px rgb(139, 130, 130) solid;
-    border-radius: 50%;
+    border-radius: 10%;
+    padding:0%;
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(10px);
     -webkit-animation: float 6s ease-in-out infinite;
@@ -123,5 +107,8 @@ body {
     }
   }
   
+  .imgL{
+
+  }
   
   
