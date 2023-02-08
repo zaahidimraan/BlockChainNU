@@ -14,6 +14,7 @@
     <link href="./CSS/navStyle.css" rel="styleSheet"></link>
     <link href="./CSS/footerStyle.css" rel="styleSheet"></link>
     <link href="./CSS/VisionStyle.css" rel="styleSheet"></link>
+    <link href="./CSS/Mission.css" rel="styleSheet"></link>
     <link href="./CSS/slideShowStyle.css" rel="styleSheet"></link>
     <!--For NavBar-->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
@@ -32,8 +33,8 @@
 <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-white bg-white" aria-label="Fourth navbar example">
     <div class="container-fluid">
-      <div class="col-auto" style="padding: 10px;margin: 20px;border-radius: 10%;">
-        <img src="./Pictures/logo.jpg" class='rounded-4' width="150px" >
+      <div class="col-auto logo" style="padding: 10px;margin: 20px;border-radius: 10%;">
+        <img src="./Pictures/logo.jpg" class='rounded-4 img' width="150px" >
       </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -58,7 +59,7 @@
       </div>
     </div>
   </nav>
-    <main>
+   <main>
       <!--Slider for the intro of website-->
        <section class="slider">
          <div class="slideShowM">
@@ -197,7 +198,7 @@
                       </div>
                   </div>
        </div>
-       
+
        <!--Mission of Blockchain Scociety-->
        <div class="mission">
          
@@ -219,7 +220,12 @@
     </main>
      <footer class="footer container-fluid">
       
-      <div class="iconsFooter pl-5">
+      <hr class="lineF">
+      <section class="card-footer">
+        Zahid Imran
+      </section>
+      <section class=" linkF fixed-bottom pr-lg-4" style="height: 120px;">
+       <div class="iconsFooter pl-5">
         <a href="#">
            <div class="layer">
               <span></span>
@@ -282,12 +288,13 @@
         </a>
      </div>
      <div class="text-end pr-5" style="float:right">
-      <div class="menuF" onclick="this.classList.toggle('open')">
+       <div class="menuF" onclick="this.classList.toggle('open')">
          <div class="button">Home</div>
          <div class="button">Blog</div>
          <div class="button">Events</div>
-       </div>
-     </div>
+        </div>
+      </div>
+     </section>
     </footer>
 
     <!--JavaScript Link to assests folder and access scoucres-->
