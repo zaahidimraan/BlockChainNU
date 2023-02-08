@@ -38,8 +38,11 @@ body {
 }
 
 .btnN-white {
-    background-color: #fff;
+    background-color: #1717bd;
+    border-radius: 5px;
+    margin-left: 5px;
     color: #000000;
+    
 }
 
 .btnN::after {
