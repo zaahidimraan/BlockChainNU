@@ -33,7 +33,7 @@
 </head>
 <body>
 <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-white bg-white" aria-label="Fourth navbar example">
+  <nav class="navbar navbar-expand-lg nav-color" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <div class="col-auto mr-4 rounded-4 logo">
         <img src="./Pictures/logo.jpg" class='rounded-4 imgL' width="150px" >
@@ -44,9 +44,18 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">Home</a></li>
-            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">Event</a></li>
-            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">Blog</a>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">
+                <span>
+                    <img src="./Pictures/icons8-home-page-64.png" height="20px"/>
+                </span>Home</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">
+                <span>
+                    <img src="./Pictures/icons8-event-accepted-64.png" height="20px"/>
+                </span>Event</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">
+                <span>
+                    <img src="./Pictures/icons8-google-blog-search-64.png" height="20px"/>
+                </span>Blog</a>
             </li>
   
           </ul>
@@ -54,8 +63,14 @@
   
           <div class="text-end">
             <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">About Us</a></li>
-              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">Team</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">
+                <span>
+                    <img src="./Pictures/icons8-about-64.png" height="20px"/>
+                </span>About Us</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">
+                <span>
+                    <img src="./Pictures/icons8-team-64.png" height="20px"/>
+                </span>Team</a></li>
             </ul>
         </div>
       </div>
@@ -301,9 +316,18 @@
      </div>
      <div class="text-end pr-5 mb-5" style="float:right">
        <div class="menuF" onclick="this.classList.toggle('open')">
-        <div class="button" onclick="IndexPage()">Home</div>
-        <div class="button" onclick="BlogPage()">Blog</div>
-        <div class="button" onclick="EventPage()">Events</div>
+        <div class="button" onclick="IndexPage()">
+            <span>
+                <img src="./Pictures/icons8-home-page-64.png" height="20px"/>
+            </span>Home</div>
+        <div class="button" onclick="BlogPage()">
+            <span>
+                <img src="./Pictures/icons8-google-blog-search-64.png" height="20px"/>
+            </span>Blog</div>
+        <div class="button" onclick="EventPage()">
+            <span>
+                <img src="./Pictures/icons8-event-accepted-64.png" height="20px"/>
+            </span>Events</div>
         </div>
       </div>
      </section>
