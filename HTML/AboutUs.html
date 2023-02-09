@@ -17,6 +17,9 @@
     <link href="../CSS/Mission.css" rel="styleSheet"></link>
     <link href="../CSS/slideShowStyle.css" rel="styleSheet"></link>
     <link href="../CSS/AboutUs.css" rel="styleSheet"></link>
+    <!--Fir the animation in the website-->
+    <link href="../CSS/Animation.css" rel="styleSheet"></link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--For NavBar-->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,7 +38,7 @@
   <nav class="navbar navbar-expand-lg navbar-white bg-white" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <div class="col-auto mr-4 rounded-4 logo">
-        <img src="../Pictures/logo.jpg" class='rounded-4 imgL' width="150px" >
+        <img src="../Pictures/logo.jpg" data-aos="flip-up" class='rounded-4 imgL' width="150px" >
       </div>
       <button class="navbar-toggler buttonNC" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,34 +46,34 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">
-              <span>
-                  <img src="../Pictures/icons8-home-page-64.png" height="20px"/>
-              </span>Home</a></li>
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">
-              <span>
-                  <img src="../Pictures/icons8-event-accepted-64.png" height="20px"/>
-              </span>Event</a></li>
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">
-              <span>
-                  <img src="../Pictures/icons8-google-blog-search-64.png" height="20px"/>
-              </span>Blog</a>
-          </li>
-
-        </ul>
-
-
-        <div class="text-end">
-          <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">
-              <span>
-                  <img src="../Pictures/icons8-about-64.png" height="20px"/>
-              </span>About Us</a></li>
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">
-              <span>
-                  <img src="../Pictures/icons8-team-64.png" height="20px"/>
-              </span>Team</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">
+                <span>
+                    <img src="../Pictures/icons8-home-page-64.png" height="20px"/>
+                </span>Home</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">
+                <span>
+                    <img src="../Pictures/icons8-event-accepted-64.png" height="20px"/>
+                </span>Event</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">
+                <span>
+                    <img src="../Pictures/icons8-google-blog-search-64.png" height="20px"/>
+                </span>Blog</a>
+            </li>
+  
           </ul>
+  
+  
+          <div class="text-end">
+            <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">
+                <span>
+                    <img src="../Pictures/icons8-about-64.png" height="20px"/>
+                </span>About Us</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">
+                <span>
+                    <img src="../Pictures/icons8-team-64.png" height="20px"/>
+                </span>Team</a></li>
+            </ul>
         </div>
       </div>
     </div>
@@ -100,23 +103,23 @@
                  <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
                    <img class="image scoietyWork1" src="../Pictures/logo.jpg" style="width:50%;height:100%">
                  </div>
-                  <h3>Sharing</h3>
-                   <p>You need permission to use a logo unless it is for editorial or information purposes.</p>
+                  <h3 data-aos="fade-up">Sharing</h3>
+                   <p data-aos="fade-left">You need permission to use a logo unless it is for editorial or information purposes.</p>
                  
                 </div>          
                 <div class="feature col">
                   <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
                     <img class="image scoietyWork2" src="../Pictures/logo.jpg" style="width:50%;height:100%">
                   </div>
-                    <h3>Interactive</h3>
-                    <p>Responsive logos are shape-shifting logos that change in size, complexity or even color to accommodate and adapt to wherever they are placed</p>
+                    <h3 data-aos="fade-down">Interactive</h3>
+                    <p data-aos="fade-right-up">Responsive logos are shape-shifting logos that change in size, complexity or even color to accommodate and adapt to wherever they are placed</p>
                 </div>
                 <div class="feature col">
                   <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
                     <img class="image scoietyWork3" src="../Pictures/logo.jpg" style="width:50%;height:100%">
                   </div>
-                    <h3>Smart Taging</h3>
-                    <p>A logo label is a branding label created by using your own company logo, design, motto or artwork</p>
+                    <h3 data-aos="fade-up">Smart Taging</h3>
+                    <p data-aos="fade-right">A logo label is a branding label created by using your own company logo, design, motto or artwork</p>
                   
                 </div>
              </div>
@@ -231,6 +234,8 @@
       function AboutUsPage(){location.replace("./AboutUs.html")}
       function TeamPage(){location.replace("./Team.html")}
     </script>
-    
+   <!--For Animation-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>AOS.init();</script>
 </body>
 </html>

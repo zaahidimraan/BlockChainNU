@@ -18,6 +18,7 @@
     <link href="./CSS/slideShowStyle.css" rel="styleSheet"></link>
     <!--Fir the animation in the website-->
     <link href="./CSS/Animation.css" rel="styleSheet"></link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--For NavBar-->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
     <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -36,7 +37,7 @@
   <nav class="navbar navbar-expand-lg nav-color" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <div class="col-auto mr-4 rounded-4 logo">
-        <img src="./Pictures/logo.jpg" class='rounded-4 imgL' width="150px" >
+        <img src="./Pictures/logo.jpg" data-aos="zoom-in" class='rounded-4 imgL' width="150px" >
       </div>
       <button class="navbar-toggler buttonNC" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -221,14 +222,14 @@
          
        
        <div class="container px-7 py-5 text-center" >
-         <h1 padding="50px">Mission</h1>
+         <h1 padding="50px" data-aos="fade-down">Mission</h1>
          <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-2">
              <div class="feature col-lg-4">
                <img src="img7.png" style="height: 100px;">
              </div>
              <div class="feature col">
-               <h3 class="text-lg-left">Personalized Experience</h3>
-               <p style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</p>
+               <h3 class="text-lg-left" data-aos="fade-up">Personalized Experience</h3>
+               <p style="text-align:left;" data-aos="fade-right">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</p>
              </div>
          </div>
        </div>
@@ -341,6 +342,11 @@
         function BlogPage(){location.replace("./HTML/Blog.html")}
         function AboutUsPage(){location.replace("./HTML/AboutUs.html")}
         function TeamPage(){location.replace("./HTML/Team.html")}
-      </script>
+    </script>
+    <!--For Animation-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
