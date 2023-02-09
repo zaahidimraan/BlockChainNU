@@ -16,6 +16,10 @@
     <link href="../CSS/VisionStyle.css" rel="styleSheet"></link>
     <link href="../CSS/Mission.css" rel="styleSheet"></link>
     <link href="../CSS/slideShowStyle.css" rel="styleSheet"></link>
+    <link href="../CSS/Event.css" rel="styleSheet"></link>
+    <!--Fir the animation in the website-->
+    <link href="../CSS/Animation.css" rel="styleSheet"></link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--For NavBar-->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -31,10 +35,10 @@
 </head>
 <body>
 <!--NavBar-->
-  <nav class="navbar navbar-expand-lg navbar-white bg-white" aria-label="Fourth navbar example">
+  <nav class="navbar navbar-expand-lg navbar-white nav-color" aria-label="Fourth navbar example">
     <div class="container-fluid">
       <div class="col-auto mr-4 rounded-4 logo">
-        <img src="../Pictures/logo.jpg" class='rounded-4 imgL' width="150px" >
+        <img src="../Pictures/logo.jpg" data-aos="flip-up" class='rounded-4 imgL' width="150px" >
       </div>
       <button class="navbar-toggler buttonNC" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,75 +46,115 @@
 
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">Home</a></li>
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">Event</a></li>
-          <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">Blog</a>
-          </li>
-
-        </ul>
-
-
-        <div class="text-end">
-          <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">About Us</a></li>
-            <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">Team</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">
+                <span>
+                    <img src="../Pictures/icons8-home-page-64.png" height="20px"/>
+                </span>Home</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">
+                <span>
+                    <img src="../Pictures/icons8-event-accepted-64.png" height="20px"/>
+                </span>Event</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">
+                <span>
+                    <img src="../Pictures/icons8-google-blog-search-64.png" height="20px"/>
+                </span>Blog</a>
+            </li>
+  
           </ul>
+  
+  
+          <div class="text-end">
+            <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">
+                <span>
+                    <img src="../Pictures/icons8-about-64.png" height="20px"/>
+                </span>About Us</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">
+                <span>
+                    <img src="../Pictures/icons8-team-64.png" height="20px"/>
+                </span>Team</a></li>
+            </ul>
         </div>
       </div>
     </div>
   </nav>
   <hr class="lineH">
   <main>
-     <section class="SocietyBackGround">
-        <div class="container px-7 py-5 text-center" >
-            <h1 padding="50px" class="aboutUsH">About Us</h1>
-            <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-2">
-                <div class="feature col-lg-4">
-                  <img src="../Pictures/logo.jpg" style="height: 200px;">
+    <section class="Event1 container px-2 py-5 mb-4 text-center">
+      <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-2">
+        <div class="feature col-lg-6" style="height:50vh;">
+          <div class="wrapperE">
+            <div class="slideshowsE">
+              <div class="slideshow slideshow--hero">
+                <div class="slides">
+                 <div class="slide slide1"></div>
+                 <div class="slide slide2"></div>
+                 <div class="slide slide3"></div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature col" data-aos="flip-up">
+          <h3 class="text-lg-center">Personalized Experience</h3>
+          <p class="text-center" style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</p>
+          <div>
+            <span>
+              <img src="../Pictures/icons8-user-location-64.png" style="height:25px;"/>
+            </span>
+              Location
+            <span>
+              <img src="../Pictures/icons8-time-machine-64.png" style="height:25px;"/>
+            </span>
+              Time
+            <span>
+                <img src="../Pictures/icons8-calendar-26-40.png" style="height:25px;"/>
+            </span>
+              Date
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="Event2 container px-2 py-5 text-center">
+      <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-2">
+        <div class="feature col" data-aos="flip-up">
+          <h3 class="text-center">Personalized Experience</h3>
+          <p class="text-center" style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</p>
+          <div>
+            <span>
+              <img src="../Pictures/icons8-user-location-64.png" style="height:25px;"/>
+            </span>
+              Location
+            <span>
+              <img src="../Pictures/icons8-time-machine-64.png" style="height:25px;"/>
+            </span>
+              Time
+            <span>
+                <img src="../Pictures/icons8-calendar-26-40.png" style="height:25px;"/>
+            </span>
+              Date
+          </div>
+        </div>
+        <div class="feature col-lg-6" style="height:50vh;">
+            <div class="wrapperE">
+              <div class="slideshowsE">
+                <div class="slideshow slideshow--hero">
+                  <div class="slides">
+                   <div class="slide slide1"></div>
+                   <div class="slide slide2"></div>
+                   <div class="slide slide3"></div>
+                 </div>
                 </div>
-                <div class="feature col">
-                  <h3 class="text-lg-left">Personalized Experience</h3>
-                  <p style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</p>
-                </div>
+              </div>
             </div>
         </div>
-     </section> 
-     <section class="SocietyWork">
-        <div class="container px-4 py-5 text-center">
-
-             <!--Workof Scoiety-->
-             <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
-                <div class="feature col">
-                 <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
-                   <img src="../Pictures/logo.jpg" style="width:50%;height:100%">
-                 </div>
-                  <h3>Sharing</h3>
-                   <p>You need permission to use a logo unless it is for editorial or information purposes.</p>
-                 
-                </div>          
-                <div class="feature col">
-                  <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
-                    <img src="../Pictures/logo.jpg" style="width:50%;height:100%">
-                  </div>
-                    <h3>Interactive</h3>
-                    <p>Responsive logos are shape-shifting logos that change in size, complexity or even color to accommodate and adapt to wherever they are placed</p>
-                </div>
-                <div class="feature col">
-                  <div class="feature d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
-                    <img src="../Pictures/logo.jpg" style="width:50%;height:100%">
-                  </div>
-                    <h3>Smart Taging</h3>
-                    <p>A logo label is a branding label created by using your own company logo, design, motto or artwork</p>
-                  
-                </div>
-             </div>
-          </div>
-    
-     </section>
-   </main>
+    </div>
+    </section>
+  </main>
+   
+   <hr class="lineF">
    <footer class="footer container-fluid">
       
-      <hr class="lineF">
       <section class="linkF pr-lg-4" style="height: 120px;">
        <div class="container"> 
         <div class="row row-cols-1 row-cols-lg-6 row-cols-md-3
@@ -189,9 +233,18 @@
      </div>
      <div class="text-end pr-5 mb-5" style="float:right">
        <div class="menuF" onclick="this.classList.toggle('open')">
-        <div class="button" onclick="IndexPage()">Home</div>
-        <div class="button" onclick="BlogPage()">Blog</div>
-        <div class="button" onclick="EventPage()">Events</div>
+        <div class="button" onclick="IndexPage()">
+          <span>
+              <img src="../Pictures/icons8-home-page-64.png" height="20px"/>
+          </span>Home</div>
+      <div class="button" onclick="BlogPage()">
+          <span>
+              <img src="../Pictures/icons8-google-blog-search-64.png" height="20px"/>
+          </span>Blog</div>
+      <div class="button" onclick="EventPage()">
+          <span>
+              <img src="../Pictures/icons8-event-accepted-64.png" height="20px"/>
+          </span>Events</div>
         </div>
       </div>
      </section>
@@ -206,6 +259,8 @@
       function AboutUsPage(){location.replace("./AboutUs.html")}
       function TeamPage(){location.replace("./Team.html")}
     </script>
-    
+   <!--For Animation-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>AOS.init();</script>
 </body>
 </html>
