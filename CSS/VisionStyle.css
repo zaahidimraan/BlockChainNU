@@ -176,3 +176,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #355cc9;
 }
+
+/*Background Colors*/
+.Vision{
+  background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #f0fcc3 100%);
+
+}

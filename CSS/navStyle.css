@@ -13,9 +13,6 @@ body {
   align-items: center;
   justify-content: center;
 }
-.nav-color{
-  background-color: #fbfbfb;
-}
 /*Animation on buttons in navbar in NavBar*/
 .btnN:link,
 .btnN:visited {
@@ -118,6 +115,18 @@ body {
   
 /*Line Header*/
 .lineH {
-  border: 3px dotted rgb(32, 35, 55);
+  border: 2px dotted rgb(32, 35, 55);
+  background-color:#3c7bff;
 }
-  
+
+/*Background color for NavBar*/
+.nav-color{
+  background-color: #3c7bff;
+  background-image: linear-gradient(225deg, #3c7bff 0%, #3c8dbc 50%, #602bc5 100%);  
+}
+
+.buttonNC{
+  box-shadow: 5px 5px 5px 5px;
+  background-image:linear-gradient(225deg, #999ca4 0%, #51aee4 50%, #9467e9 100%);;
+}
+
