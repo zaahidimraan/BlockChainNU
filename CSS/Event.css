@@ -22,21 +22,71 @@
             animation: float 6s ease-in-out 3s infinite; 
 }
 
-/*SlideShow*/
-.ImageSliderE{
-  background-image: url(https://source.unsplash.com/1000x750);
-  -webkit-animation: float1 6s ease-in-out infinite;
-  animation: float1 6s ease-in-out infinite; 
+/*Event Image*/
+.imageE{
+  border-radius:40px;
 }
-@-webkit-keyframes float1 {
-  0% {
-    background-image: url(https://source.unsplash.com/1000x750);
-  }
-  50% {
-    background-image: url(https://source.unsplash.com/1000x750);
-  }
+.imageE:hover{
+    -webkit-animation: wobble-hor-top 0.8s both;
+            animation: wobble-hor-top 0.8s both;
+
+}
+ @-webkit-keyframes wobble-hor-top {
+  0%,
   100% {
-    src: url('../Pictures/icons8-event-accepted-64.png');
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
+  }
+}
+@keyframes wobble-hor-top {
+  0%,
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+  }
+  15% {
+    -webkit-transform: translateX(-30px) rotate(6deg);
+            transform: translateX(-30px) rotate(6deg);
+  }
+  30% {
+    -webkit-transform: translateX(15px) rotate(-6deg);
+            transform: translateX(15px) rotate(-6deg);
+  }
+  45% {
+    -webkit-transform: translateX(-15px) rotate(3.6deg);
+            transform: translateX(-15px) rotate(3.6deg);
+  }
+  60% {
+    -webkit-transform: translateX(9px) rotate(-2.4deg);
+            transform: translateX(9px) rotate(-2.4deg);
+  }
+  75% {
+    -webkit-transform: translateX(-6px) rotate(1.2deg);
+            transform: translateX(-6px) rotate(1.2deg);
   }
 }
 
