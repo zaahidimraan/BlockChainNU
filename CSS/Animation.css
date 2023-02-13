@@ -125,5 +125,8 @@
   }
 }
 
-  
-  
+/*Line General*/
+.lineG {
+  border: 2px dotted rgb(32, 35, 55);
+  background-color:#3c7bff;
+}
