@@ -205,7 +205,6 @@
     width: 100%;
     top: 0;
     left: 0;
-    background-color: #b3401a;
   }
   .slideShowM__slide {
     position: absolute;
@@ -254,7 +253,7 @@
             animation-delay: 0s;
   }
   .slideShowM__slide:nth-child(1) .slideShowM__slideBg {
-    background-image: url(https://unsplash.it/g/1500/2200?image=838);
+    background-image: url(https://unsplash.it/g/1500/1000?image=1078);
   }
   .slideShowM__slide:nth-child(2) {
     -webkit-animation-delay: 5s;

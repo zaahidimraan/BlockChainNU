@@ -130,3 +130,17 @@
   border: 2px dotted rgb(32, 35, 55);
   background-color:#3c7bff;
 }
+
+/*Text Appear Slowly*/
+/* define the animation */
+@keyframes appear-slowly {
+  0%{opacity: 1;}
+  50%{opacity: .1;}
+  100%{opacity: 1;}
+}
+
+/* apply the animation to the text */
+.textAppearSlowly {
+  animation: appear-slowly 2s ease-in;
+  -webkit-animation: appear-slowly 2s ease-in;
+}
