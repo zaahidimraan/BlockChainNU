@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8">
+    <!--Links to Style Sheet-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Link to css files-->
+    <link href="../CSS/navStyle.css" rel="styleSheet"></link>
+    <link href="../CSS/footerStyle.css" rel="styleSheet"></link>
+    <link href="../CSS/VisionStyle.css" rel="styleSheet"></link>
+    <link href="../CSS/Mission.css" rel="styleSheet"></link>
+    <link href="../CSS/slideShowStyle.css" rel="styleSheet"></link>
+    <link href="../CSS/Event.css" rel="styleSheet"></link>
+    <!--Fir the animation in the website-->
+    <link href="../CSS/Animation.css" rel="styleSheet"></link>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--For NavBar-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/navbars/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--For Mission-->
+    
+    <!--Footer Link for styleing-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!--Title and Logo-->
+    <title>Blockchain</title>
+    <link rel = "icon" class="rounded-4" href ="../Pictures/logo.jpg" type = "image/x-icon">
+
+
+</head>
+<body>
+<!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-white nav-color" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <div class="col-auto mr-4 rounded-4 logo">
+        <img src="../Pictures/logo.jpg" data-aos="flip-up" class='rounded-4 imgL' width="150px" >
+      </div>
+      <button class="navbar-toggler buttonNC mr-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="IndexPage()">
+                <span>
+                    <img src="../Pictures/icons8-home-page-64.png" height="20px"/>
+                </span>Home</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="EventPage()">
+                <span>
+                    <img src="../Pictures/icons8-event-accepted-64.png" height="20px"/>
+                </span>Event</a></li>
+            <li><a class="nav-link mb-1 px-2 text-secondary btnN btnN-white btnN-animate" onclick="BlogPage()">
+                <span>
+                    <img src="../Pictures/icons8-google-blog-search-64.png" height="20px"/>
+                </span>Blog</a>
+            </li>
+  
+          </ul>
+  
+  
+          <div class="text-end">
+            <ul class="menuItems nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="AboutUsPage()">
+                <span>
+                    <img src="../Pictures/icons8-about-64.png" height="20px"/>
+                </span>About Us</a></li>
+              <li><a class="nav-link px-2 text-secondary btnN btnN-white btnN-animate" onclick="TeamPage()">
+                <span>
+                    <img src="../Pictures/icons8-team-64.png" height="20px"/>
+                </span>Team</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <hr class="lineH">
+  <main>
+    <section class="Event1 container px-2 py-5 mb-4 text-center">
+      <div class="row g-4 py-5 row-cols-1 row-cols-sm-1 row-cols-lg-2">
+        <div class="col">
+          <img class="imageE" data-aos="zoom-in" src="../Pictures/logo.jpg"/>
+        </div>
+        <div class="col" data-aos="flip-up">
+          <h1 class="text-lg-center">Personalized Experience</h1>
+          <h3 class="text-center" style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</h3>
+          <div>
+            <span>
+              <img data-aos="flip-left" src="../Pictures/icons8-user-location-64.png" style="height:25px;"/>
+            </span>
+              Location
+            <span>
+              <img data-aos="flip-up" src="../Pictures/icons8-time-machine-64.png" style="height:25px;"/>
+            </span>
+              Time
+            <span>
+                <img data-aos="flip-right" src="../Pictures/icons8-calendar-26-40.png" style="height:25px;"/>
+            </span>
+              Date
+          </div>
+        </div>
+    </div>
+    </section>
+    <section class="Event2 container px-2 py-5 text-center">
+      <div class="row g-4 py-5 row-cols-1 row-cols-md-1 row-cols-lg-2">
+        <div class="col" data-aos="flip-up">
+          <h1 class="text-center">Personalized Experience</h1>
+          <h3 class="text-center" style="text-align:left;">Customers expect companies to understand their unique tastes and preferences and engage them as individuals rather than customer types or segments.</h3>
+          <div>
+            <span>
+              <img data-aos="flip-left" src="../Pictures/icons8-user-location-64.png" style="height:25px;"/>
+            </span>
+              Location
+            <span>
+              <img data-aos="flip-up" src="../Pictures/icons8-time-machine-64.png" style="height:25px;"/>
+            </span>
+              Time
+            <span>
+                <img data-aos="flip-right" src="../Pictures/icons8-calendar-26-40.png" style="height:25px;"/>
+            </span>
+              Date
+          </div>
+        </div>
+        <div class="col">
+            <img class="imageE" data-aos="zoom-in" src="../Pictures/logo.jpg"/>
+        </div>
+    </div>
+    </section>
+  </main>
+   
+   <hr class="lineF">
+   <footer class="footer container-fluid">
+      
+      <section class="linkF pr-lg-4" style="height: 120px;">
+        <div class="container"> 
+          <div class="row row-cols-1 row-cols-lg-6 row-cols-md-2
+          row-cols-sm-2 iconsFooter pl-2">
+          <div class="col fa">
+          <a href="#" class="mb-3">
+             <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-facebook-f"></span>
+             </div>
+             <div class="text">
+                Facebook
+             </div>
+          </a>
+          </div>
+          <div class="col tw">
+          <a href="#" class="mb-3">
+             <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-twitter"></span>
+             </div>
+             <div class="text">
+                Twitter
+             </div>
+          </a>
+          </div>
+          <div class="col inst">
+          <a href="#" class="mb-3">
+             <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-instagram"></span>
+             </div>
+             <div class="text">
+                Instagram
+             </div>
+          </a>
+          </div>
+          <div class="col li">
+          <a href="#" class="mb-3">
+             <div class="layer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="fab fa-linkedin-in"></span>
+             </div>
+             <div class="text">
+                Linkedin
+             </div>
+          </a>
+          </div>
+          <div class="col em">
+          <a href="#" class="mb-3">
+           <div class="layer">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fab fa fa-envelope"></span>
+           </div>
+           <div class="text">
+              Email
+           </div>
+          </a>
+          </div>
+        </div>
+       </div>
+     <div class="text-end pr-5 mb-5" style="float:right">
+       <div class="menuF" onclick="this.classList.toggle('open')">
+        <div class="button" onclick="IndexPage()">
+          <span>
+              <img src="../Pictures/icons8-home-page-64.png" height="40px"/>
+          </span></div>
+        <div class="button" onclick="BlogPage()">
+          <span>
+              <img src="../Pictures/icons8-google-blog-search-64.png" height="40px"/>
+          </span></div>
+        <div class="button" onclick="EventPage()">
+          <span>
+              <img src="../Pictures/icons8-event-accepted-64.png" height="40px"/>
+          </span></div>
+        </div>
+      </div>
+     </section>
+   </footer>
+
+    <!--JavaScript Link to assests folder and access scoucres-->
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function IndexPage(){location.replace("../index.html")}
+      function EventPage(){location.replace("./Event.html")}
+      function BlogPage(){location.replace("./Blog.html")}
+      function AboutUsPage(){location.replace("./AboutUs.html")}
+      function TeamPage(){location.replace("./Team.html")}
+    </script>
+   <!--For Animation-->
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>AOS.init();</script>
+</body>
+</html>
